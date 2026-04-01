@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Essays — In The Zone</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.essays-grid{padding:0 40px 60px;}
+.essays-row{
+  display:grid;grid-template-columns:80px 1fr auto;
+  align-items:baseline;gap:24px;
+  padding:28px 0;border-bottom:1px solid var(--rule);
+  transition:opacity 0.15s;
+}
+.essays-row:hover{opacity:0.65;}
+.essays-row:last-child{border-bottom:none;}
+.essays-num{
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;
+  font-size:40px;color:#222;line-height:1;
+}
+.essays-main{}
+.essays-tag{
+  font-family:'Space Mono',monospace;font-size:9px;letter-spacing:0.18em;
+  text-transform:uppercase;color:var(--zap);margin-bottom:8px;
+}
+.essays-hed{
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;
+  font-size:32px;line-height:1.0;text-transform:uppercase;
+  color:var(--white);margin-bottom:8px;
+}
+.essays-dek{font-size:14px;line-height:1.6;color:#888;max-width:600px;}
+.essays-meta{
+  font-family:'Space Mono',monospace;font-size:10px;
+  color:#444;text-align:right;white-space:nowrap;
+}
+
+.filter-bar{
+  padding:16px 40px;border-bottom:1px solid var(--rule);
+  display:flex;gap:20px;align-items:center;
+  background:#0f0f0f;
+}
+.filter-label{
+  font-family:'Space Mono',monospace;font-size:10px;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);
+  margin-right:8px;
+}
+.filter-btn{
+  font-family:'Space Mono',monospace;font-size:10px;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--muted);background:none;border:1px solid var(--rule);
+  padding:5px 14px;cursor:pointer;transition:all 0.15s;
+}
+.filter-btn:hover,.filter-btn.active{color:var(--bg);background:var(--zap);border-color:var(--zap);}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="wordmark">In The <span>Zone</span></a>
+  <div class="navlinks">
+    <a href="essays.html" class="active">Essays</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Subscribe</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-tag">Archive</div>
+  <h1>All Essays</h1>
+  <p>Writing on mental health, sport, and what it actually feels like to compete.</p>
+</div>
+
+<div class="filter-bar">
+  <span class="filter-label">Filter:</span>
+  <button class="filter-btn active">All</button>
+  <button class="filter-btn">Mindset</button>
+  <button class="filter-btn">Vulnerability</button>
+  <button class="filter-btn">Competition</button>
+  <button class="filter-btn">Psychology</button>
+</div>
+
+<div class="essays-grid">
+  <a href="essay.html" class="essays-row">
+    <div class="essays-num">01</div>
+    <div class="essays-main">
+      <div class="essays-tag">Vulnerability</div>
+      <div class="essays-hed">It's OK to Be Seen Trying</div>
+      <div class="essays-dek">The fear of looking like you care more than everyone else is a cage you built yourself.</div>
+    </div>
+    <div class="essays-meta">4 min read</div>
+  </a>
+  <a href="essay.html" class="essays-row">
+    <div class="essays-num">02</div>
+    <div class="essays-main">
+      <div class="essays-tag">Competition</div>
+      <div class="essays-hed">Are You Living, or Are You Performing?</div>
+      <div class="essays-dek">There's a version of you that shows up and hits every split — and goes home exhausted from the performance of being a serious athlete.</div>
+    </div>
+    <div class="essays-meta">6 min read</div>
+  </a>
+  <a href="essay.html" class="essays-row">
+    <div class="essays-num">03</div>
+    <div class="essays-main">
+      <div class="essays-tag">Motivation</div>
+      <div class="essays-hed">There's Nothing Wrong With Being a Hater</div>
+      <div class="essays-dek">Use it. Channel it. Let it put fire in your legs when your lungs say stop.</div>
+    </div>
+    <div class="essays-meta">5 min read</div>
+  </a>
+  <a href="essay.html" class="essays-row">
+    <div class="essays-num">04</div>
+    <div class="essays-main">
+      <div class="essays-tag">Mindset</div>
+      <div class="essays-hed">How to Want More Without Hating What You Have</div>
+      <div class="essays-dek">Ambition and gratitude aren't opposites. The best athletes hold both at once.</div>
+    </div>
+    <div class="essays-meta">7 min read</div>
+  </a>
+  <a href="essay.html" class="essays-row">
+    <div class="essays-num">05</div>
+    <div class="essays-main">
+      <div class="essays-tag">Psychology</div>
+      <div class="essays-hed">Why We Get In Our Own Way</div>
+      <div class="essays-dek">The body is almost never the problem. The thing that slows you down lives six inches behind your eyes.</div>
+    </div>
+    <div class="essays-meta">5 min read</div>
+  </a>
+  <a href="essay.html" class="essays-row">
+    <div class="essays-num">06</div>
+    <div class="essays-main">
+      <div class="essays-tag">Ego</div>
+      <div class="essays-hed">I'm a Good Athlete and I Need Everyone to Know It</div>
+      <div class="essays-dek">On confidence, ego, and the difference between the two.</div>
+    </div>
+    <div class="essays-meta">6 min read</div>
+  </a>
+  <a href="essay.html" class="essays-row">
+    <div class="essays-num">07</div>
+    <div class="essays-main">
+      <div class="essays-tag">Competition</div>
+      <div class="essays-hed">Trash Talk</div>
+      <div class="essays-dek">What we say at the line, and what it actually means.</div>
+    </div>
+    <div class="essays-meta">5 min read</div>
+  </a>
+  <a href="essay.html" class="essays-row">
+    <div class="essays-num">08</div>
+    <div class="essays-main">
+      <div class="essays-tag">Grit</div>
+      <div class="essays-hed">Discomfort Is the Price</div>
+      <div class="essays-dek">No one told you it was supposed to feel easy. So why are you still surprised when it doesn't?</div>
+    </div>
+    <div class="essays-meta">4 min read</div>
+  </a>
+  <a href="essay.html" class="essays-row">
+    <div class="essays-num">09</div>
+    <div class="essays-main">
+      <div class="essays-tag">Action</div>
+      <div class="essays-hed">Literally Just Do Things</div>
+      <div class="essays-dek">A 30-second rule for when your brain is running a longer race than your body needs it to.</div>
+    </div>
+    <div class="essays-meta">3 min read</div>
+  </a>
+</div>
+
+<div class="sub-strip">
+  <div class="sub-strip-left">
+    <h2>Stay in the zone.</h2>
+    <p>New essays straight to your inbox. Free, always.</p>
+  </div>
+  <div class="sub-form">
+    <input type="email" placeholder="your@email.com" />
+    <button>Subscribe →</button>
+  </div>
+</div>
+
+<footer>
+  <p>In The <span class="zap">Zone</span> — published independently</p>
+  <p>for the ones still showing up</p>
+</footer>
+
+</body>
+</html>

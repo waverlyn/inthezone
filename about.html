@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — In The Zone</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.about-layout{
+  display:grid;grid-template-columns:1fr 1fr;
+  border-bottom:1px solid var(--rule);
+  min-height:500px;
+}
+.about-img{overflow:hidden;}
+.about-img img{width:100%;height:100%;object-fit:cover;filter:brightness(0.55) saturate(0.8);display:block;}
+.about-text{
+  padding:64px 56px;border-left:1px solid var(--rule);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.about-text p{font-size:16px;line-height:1.8;color:#bbb;margin-bottom:24px;}
+.about-text p:first-child{font-size:18px;color:var(--white);font-style:italic;}
+.about-text p:last-child{margin-bottom:0;}
+
+.about-values{
+  padding:64px 40px;border-bottom:1px solid var(--rule);
+}
+.values-label{
+  font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.2em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:40px;
+}
+.values-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--rule);}
+.value-item{background:var(--bg);padding:32px;}
+.value-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:48px;color:#1e1e1e;line-height:1;margin-bottom:8px;}
+.value-hed{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:24px;text-transform:uppercase;color:var(--white);margin-bottom:10px;}
+.value-dek{font-size:13px;line-height:1.6;color:#777;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="wordmark">In The <span>Zone</span></a>
+  <div class="navlinks">
+    <a href="essays.html">Essays</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Subscribe</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-tag">About</div>
+  <h1>In The Zone</h1>
+  <p>A journal on mental health, track & field, and the inner life of competing.</p>
+</div>
+
+<div class="about-layout">
+  <div class="about-img">
+    <img src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=900&q=80" alt="athlete" />
+  </div>
+  <div class="about-text">
+    <p>This started because I kept noticing a gap between what athletes say publicly and what they actually feel.</p>
+    <p>Everyone talks about the grind, the work, the results. Nobody talks about the weird headspace before a race. The shame of a bad performance. The exhaustion of caring so much about something that doesn't care back.</p>
+    <p>In The Zone is where I write about that stuff. It's for track athletes specifically — but the psychology of competition is universal. If you've ever gotten in your own way, felt like a fraud, or talked yourself out of something you wanted: this is for you.</p>
+    <p>I write it because I needed to read it. Maybe you do too.</p>
+  </div>
+</div>
+
+<div class="about-values">
+  <div class="values-label">What this is about</div>
+  <div class="values-grid">
+    <div class="value-item">
+      <div class="value-num">01</div>
+      <div class="value-hed">Honesty over inspiration</div>
+      <div class="value-dek">No motivational posters. No "you've got this." Just real writing about what competing actually feels like.</div>
+    </div>
+    <div class="value-item">
+      <div class="value-num">02</div>
+      <div class="value-hed">Sport as a mirror</div>
+      <div class="value-dek">Track doesn't build character — it reveals it. The oval is just a good place to see yourself clearly.</div>
+    </div>
+    <div class="value-item">
+      <div class="value-num">03</div>
+      <div class="value-hed">Mental health out loud</div>
+      <div class="value-dek">Talking about the inner life of sport isn't soft. It's the most honest thing an athlete can do.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sub-strip">
+  <div class="sub-strip-left">
+    <h2>Stay in the zone.</h2>
+    <p>New essays on sport, mind, and what it actually takes — straight to your inbox.</p>
+  </div>
+  <div class="sub-form">
+    <input type="email" placeholder="your@email.com" />
+    <button>Subscribe →</button>
+  </div>
+</div>
+
+<footer>
+  <p>In The <span class="zap">Zone</span> — published independently</p>
+  <p>for the ones still showing up</p>
+</footer>
+
+</body>
+</html>

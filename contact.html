@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscribe — In The Zone</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.contact-layout{
+  display:grid;grid-template-columns:1fr 1fr;
+  border-bottom:1px solid var(--rule);
+  min-height:480px;
+}
+.contact-left{
+  padding:64px 56px;border-right:1px solid var(--rule);
+}
+.contact-left h2{
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;
+  font-size:48px;text-transform:uppercase;color:var(--white);
+  line-height:1;margin-bottom:20px;
+}
+.contact-left p{font-size:15px;line-height:1.75;color:#888;margin-bottom:16px;}
+.contact-left p:last-child{margin-bottom:0;}
+
+.contact-right{padding:64px 56px;display:flex;flex-direction:column;justify-content:center;}
+.field-group{margin-bottom:20px;}
+.field-label{
+  font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.15em;
+  text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px;
+}
+.field-group input,
+.field-group textarea{
+  width:100%;padding:14px 16px;
+  background:#141414;border:1px solid var(--rule);
+  color:var(--white);font-family:'Barlow',sans-serif;font-size:15px;
+  outline:none;transition:border-color 0.15s;resize:none;
+}
+.field-group input:focus,
+.field-group textarea:focus{border-color:#444;}
+.field-group input::placeholder,
+.field-group textarea::placeholder{color:#333;}
+.submit-btn{
+  width:100%;padding:14px;
+  background:var(--zap);color:#0b0b0b;
+  font-family:'Space Mono',monospace;font-size:11px;font-weight:700;
+  letter-spacing:0.12em;text-transform:uppercase;
+  border:none;cursor:pointer;margin-top:8px;
+  transition:background 0.15s;
+}
+.submit-btn:hover{background:#c2e000;}
+
+.perks{
+  padding:56px 40px;border-bottom:1px solid var(--rule);
+  background:#0f0f0f;
+}
+.perks-label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:32px;}
+.perks-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;}
+.perk{}
+.perk-icon{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:36px;color:var(--zap);margin-bottom:10px;}
+.perk-hed{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;color:var(--white);margin-bottom:8px;}
+.perk-dek{font-size:13px;line-height:1.6;color:#666;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="wordmark">In The <span>Zone</span></a>
+  <div class="navlinks">
+    <a href="essays.html">Essays</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Subscribe</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-tag">Subscribe</div>
+  <h1>Stay In<br>The Zone</h1>
+  <p>New essays when they're ready. No spam, no filler — just writing worth your time.</p>
+</div>
+
+<div class="contact-layout">
+  <div class="contact-left">
+    <h2>Free.<br>Always.</h2>
+    <p>In The Zone is independent writing. No algorithm, no brand deals, no content calendar. Just essays that take time to write because they're worth taking time to read.</p>
+    <p>Subscribe and get every new piece straight to your inbox. Unsubscribe any time — no hard feelings, you've got races to run.</p>
+    <p>Want to get in touch directly? Use the form or reach out at <span style="color:var(--zap);">hello@inthezone.com</span></p>
+  </div>
+  <div class="contact-right">
+    <div class="field-group">
+      <label class="field-label">Your name</label>
+      <input type="text" placeholder="First name" />
+    </div>
+    <div class="field-group">
+      <label class="field-label">Email address</label>
+      <input type="email" placeholder="your@email.com" />
+    </div>
+    <div class="field-group">
+      <label class="field-label">Message (optional)</label>
+      <textarea rows="4" placeholder="Say hi, share a story, ask something..."></textarea>
+    </div>
+    <button class="submit-btn">Subscribe →</button>
+  </div>
+</div>
+
+<div class="perks">
+  <div class="perks-label">What you get</div>
+  <div class="perks-grid">
+    <div class="perk">
+      <div class="perk-icon">01</div>
+      <div class="perk-hed">New essays in your inbox</div>
+      <div class="perk-dek">Every piece delivered directly to you — no algorithm deciding if you see it.</div>
+    </div>
+    <div class="perk">
+      <div class="perk-icon">02</div>
+      <div class="perk-hed">No noise</div>
+      <div class="perk-dek">Only essays. No weekly roundups, no newsletters about nothing. Just the writing.</div>
+    </div>
+    <div class="perk">
+      <div class="perk-icon">03</div>
+      <div class="perk-hed">Free forever</div>
+      <div class="perk-dek">This will always be free. Good writing about mental health in sport shouldn't cost anything.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>In The <span class="zap">Zone</span> — published independently</p>
+  <p>for the ones still showing up</p>
+</footer>
+
+</body>
+</html>
